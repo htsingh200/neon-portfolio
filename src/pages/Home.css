@@ -1,0 +1,388 @@
+.home {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero-tag {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.tag-bracket {
+  font-weight: 900;
+}
+
+.tag-text {
+  color: var(--text-secondary);
+  margin: 0 0.5rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  margin: 1rem 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.typing-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: var(--neon-cyan-readable);
+  font-weight: 600;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Hero Visual */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.visual-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.orbiting-circle {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+
+.circle-1 {
+  width: 150px;
+  height: 150px;
+  border-color: var(--neon-cyan);
+  animation: rotate 20s linear infinite;
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.circle-2 {
+  width: 250px;
+  height: 250px;
+  border-color: var(--neon-purple);
+  animation: rotate 15s linear infinite reverse;
+  box-shadow: 0 0 20px var(--neon-purple);
+}
+
+.circle-3 {
+  width: 350px;
+  height: 350px;
+  border-color: var(--neon-pink);
+  animation: rotate 25s linear infinite;
+  box-shadow: 0 0 20px var(--neon-pink);
+}
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.center-orb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, var(--neon-cyan), var(--neon-purple));
+  border-radius: 50%;
+  box-shadow: 
+    0 0 30px var(--neon-cyan),
+    0 0 60px var(--neon-purple),
+    inset 0 0 30px var(--neon-cyan);
+}
+
+.orb-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: var(--bg-dark);
+  border-radius: 50%;
+  box-shadow: inset 0 0 30px var(--neon-cyan);
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title-tag {
+  font-size: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.skill-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.skill-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(40px);
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .skill-glow {
+  opacity: 0.3;
+}
+
+/* Interests Section */
+.interests-section {
+  padding: 4rem 0;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.interest-card {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.interest-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.interest-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--neon-cyan-readable);
+}
+
+.interest-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.interest-line {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+  margin: 1rem auto 0;
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 0;
+  margin: 4rem 0;
+}
+
+.cta-content {
+  text-align: center;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .hero-section .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .visual-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle-1 { width: 120px; height: 120px; }
+  .circle-2 { width: 200px; height: 200px; }
+  .circle-3 { width: 280px; height: 280px; }
+
+  .center-orb {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content {
+    padding: 2rem;
+  }
+
+  .cta-title {
+    font-size: 1.8rem;
+  }
+}

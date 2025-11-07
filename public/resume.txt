@@ -1,0 +1,65 @@
+# Harshit Singh - Resume
+
+## Full Stack Developer
+
+### Contact Information
+- Email: contact@harshitsingh.dev
+- GitHub: github.com/harshitsingh
+- LinkedIn: linkedin.com/in/harshitsingh
+
+### Professional Summary
+Full Stack Developer with 2+ years of experience in building scalable web applications using Angular, React, Java, and Spring Boot. Expertise in cloud technologies (Azure), CI/CD pipelines (Jenkins), containerization (Docker), and AI/LLM integration.
+
+### Work Experience
+
+**Full Stack Developer** | Tech Solutions Inc. | Jan 2023 - Present
+- Developed enterprise-level Angular applications with 50,000+ daily active users
+- Built RESTful APIs using Java Spring Boot with microservices architecture
+- Implemented CI/CD pipelines using Jenkins and Azure DevOps
+- Integrated AI/LLM models for intelligent features
+
+**Software Engineer** | Innovation Labs | Jun 2022 - Dec 2022
+- Developed responsive web applications using Angular and React
+- Designed backend services with Java and Spring Boot
+- Optimized application performance by 40%
+- Implemented Azure cloud solutions
+
+**Junior Developer** | StartUp Ventures | Jan 2022 - May 2022
+- Assisted in web application development
+- Fixed bugs and implemented new features
+- Learned Docker containerization and deployment
+
+### Education
+
+**Bachelor of Technology in Computer Science** | 2018 - 2022
+XYZ Institute of Technology | CGPA: 8.5/10
+
+### Technical Skills
+
+**Frontend:** Angular, React, TypeScript, HTML5, CSS3, SASS
+**Backend:** Java, Spring Boot, Node.js, Express, REST APIs
+**Database:** PostgreSQL, MySQL, MongoDB, Redis
+**DevOps:** Jenkins, Azure DevOps, Docker, Kubernetes, Git, CI/CD
+**AI/ML:** TensorFlow, PyTorch, LangChain, OpenAI API
+
+### Certifications
+- AWS Certified Solutions Architect (2023)
+- Azure Developer Associate (2023)
+- Professional Scrum Master (PSM I) (2022)
+
+### Projects
+
+**AI-Powered Chatbot Platform**
+- Built intelligent chatbot using LLM models
+- Technologies: React, Node.js, OpenAI API, MongoDB
+
+**E-Commerce Microservices**
+- Scalable platform with microservices architecture
+- Technologies: Java, Spring Boot, Angular, PostgreSQL, Docker
+
+**Real-Time Analytics Dashboard**
+- Comprehensive dashboard with data visualization
+- Technologies: React, D3.js, WebSocket, Express
+
+---
+This is a placeholder resume. Replace with your actual resume PDF.
